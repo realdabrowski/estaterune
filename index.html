@@ -5,90 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estaterune - Tokenizing Real-World Assets</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #000000;
-      color: #00FFFF;
+      background-color: #1a1a1a;
+      color: #ffffff;
       font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
-    }
-    .subtle-glow {
-      text-shadow: 0 0 3px #00FFFF, 0 0 6px #00FFFF;
-    }
-    .subtle-pink {
-      color: #FF00FF;
-      text-shadow: 0 0 3px #FF00FF, 0 0 6px #FF00FF;
     }
     .hero {
-      background: linear-gradient(to bottom, #000000, #1a0033);
-      height: 500px;
+      height: 400px;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
-    }
-    .hero img {
-      max-width: 80%;
-      height: auto;
-      filter: drop-shadow(0 0 10px #FF00FF) drop-shadow(0 0 5px #00FFFF);
-    }
-    .cta-button {
-      background: linear-gradient(45deg, #FF00FF, #00FFFF);
-      color: #000000;
-      font-weight: bold;
-      padding: 12px 24px;
-      border-radius: 50px;
-      box-shadow: 0 0 5px #FF00FF, 0 0 10px #00FFFF;
-      transition: all 0.3s ease;
-    }
-    .cta-button:hover {
-      box-shadow: 0 0 10px #FF00FF, 0 0 15px #00FFFF;
-      transform: scale(1.05);
-    }
-    footer {
-      color: #999999;
-    }
-    h1, h2 {
-      font-weight: 700;
-    }
-    p {
-      font-weight: 400;
     }
   </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="py-4 bg-black text-center">
-    <h1 class="text-4xl font-bold subtle-glow">Estaterune</h1>
-    <p class="text-xl subtle-pink">Tokenizing Real-World Assets on the Bitcoin Blockchain</p>
+  <header class="py-4 bg-black text-white text-center">
+    <h1 class="text-3xl font-bold mt-2">Estaterune</h1>
+    <p class="text-lg">Tokenizing Real-World Assets on the Bitcoin Blockchain</p>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="assets/logo_full.png" alt="Estaterune Logo" class="mb-4">
     <div class="text-center">
-      <h2 class="text-5xl font-bold subtle-glow mb-4">Revolutionizing Asset Ownership</h2>
-      <p class="text-2xl subtle-pink max-w-3xl mx-auto">Estaterune brings real-world assets like real estate to the Bitcoin blockchain, enabling fractional ownership, liquidity, and global access.</p>
+      <h2 class="text-4xl font-bold mb-4">Revolutionizing Asset Ownership</h2>
+      <p class="text-xl max-w-2xl mx-auto">Estaterune brings real-world assets like real estate to the Bitcoin blockchain, enabling fractional ownership, liquidity, and global access.</p>
     </div>
   </section>
 
   <!-- Mission Section -->
-  <section class="py-12 px-4 text-center bg-gradient-to-b from-#1a0033 to-#000000">
-    <h2 class="text-3xl font-bold subtle-glow mb-4">Our Mission</h2>
-    <p class="text-xl max-w-3xl mx-auto">At Estaterune, we tokenize real-world assets using the Bitcoin blockchain’s Runes protocol (Rune ID: 902650:1531). Our goal is to make high-value assets accessible, liquid, and secure for investors worldwide.</p>
+  <section class="py-12 px-4 text-center">
+    <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
+    <p class="max-w-3xl mx-auto">At Estaterune, we tokenize real-world assets using the Bitcoin blockchain’s Runes protocol (Rune ID: 902650:1531). Our goal is to make high-value assets accessible, liquid, and secure for investors worldwide. Download our Whitepaper to learn more.</p>
+	  <div class="whitepaper-section">
+    <a href="https://ipfs.io/ipfs/bafkreieplzge72btm6s3rqhl3mvb226qfslfwn4yw63qafcrg4rut42aj4" target="_blank" class="btn">Download Estaterune Whitepaper</a>
+    <style>
+        .whitepaper-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: #F7931A; /* Bitcoin orange */
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e6861a;
+        }
+    </style>
+</div>
   </section>
 
   <!-- Call to Action -->
-  <section class="py-12 bg-black text-center">
-    <h2 class="text-3xl font-bold subtle-glow mb-4">Join the Future of Assets</h2>
-    <p class="text-xl subtle-pink mb-6">Explore our tokenized assets and join the Estaterune community.</p>
-    <a href="https://x.com" target="_blank" class="cta-button">Follow us on X</a>
-  </section>
 
+  <section class="py-12 bg-black text-white text-center">
+    <h2 class="text-2xl font-bold mb-4">Join the Future of Assets</h2>
+    <p class="mb-6">Explore our tokenized assets and join the Estaterune community.</p>
+    <div class="social-buttons flex justify-center gap-4">
+        <a href="https://x.com/estaterune" target="_blank" class="bg-white text-black px-6 py-3 rounded-lg font-bold hover:bg-gray-200">Follow us on X</a>
+        <a href="https://njump.me/npub1nyu6hq2ymnmpee5rpw6hgch98893f9c3kvkc5wdn800lznh5978su7t0z0" target="_blank" class="bg-[#6b21a8] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#4c1d95]">Follow us on NOSTR</a>
+    </div>
+</section>
   <!-- Footer -->
-  <footer class="py-6 text-center">
+  <footer class="py-6 text-center text-gray-400">
     <p>&copy; 2025 Estaterune. All rights reserved.</p>
   </footer>
 </body>
